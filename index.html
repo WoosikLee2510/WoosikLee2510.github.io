@@ -1,0 +1,1178 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Patrick Geneva</title>
+      <meta name="author" content="Patrick Geneva">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="stylesheet.css">
+      <link rel="icon" href="favicon.ico">
+      <script type="text/javascript">
+         function start(id) {
+          var element1 = document.getElementById(id+"_1");
+          var element2 = document.getElementById(id+"_2");
+          var element3 = document.getElementById(id+"_3");
+          if(element1 && element2 && element3) {
+            if(element3.src == "") {
+               element3.src = element3.getAttribute('data-src');
+            }
+            element1.style.opacity = "0";
+            element2.style.opacity = "1";
+          }
+         }
+         function stop(id) {
+          var element1 = document.getElementById(id+"_1");
+          var element2 = document.getElementById(id+"_2");
+          if(element1 && element2) {
+            element1.style.opacity = "1";
+            element2.style.opacity = "0";
+          }
+         }
+      </script>
+      <script type="text/javascript">
+      if (window.location.protocol != "https:" && window.location.protocol != "file:") {
+         window.location.protocol = "https:";
+      }
+      </script>
+   </head>
+<body>
+
+
+<!-- ====================================== -->
+<!-- ====================================== -->
+<!-- ====================================== -->
+<table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<tbody>
+<tr style="padding:0px">
+<td style="padding:0px">
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<tbody>
+<tr style="padding:0px">
+<td style="padding:2.5%;width:63%;vertical-align:middle">
+<p style="text-align:center">
+   <name>Patrick Geneva</name>
+</p>
+<p>I am a PhD Canidate at <a href="https://www.udel.edu/">University of Delaware</a> <a href="https://www.cis.udel.edu/">College of Engineering</a>, where I work on robotics and state estimation.
+</p>
+<p>
+  I am currently conducting research in the <a href="https://sites.udel.edu/robot/">Robot Perception and Navigation Group (RPNG)</a> under the direction of <a href=" http://udel.edu/~ghuang/">Prof. Guoquan (Paul) Huang</a>.
+  I have received the <a href="https://www.udel.edu/academics/colleges/grad/current-students/funding/">University Doctoral Fellowship Award</a>, <a href="https://www.delspace.org/">NASA Delaware Space Grant (DESG) Graduate Fellowship</a>, and <a href="https://me.udel.edu/academics/student-awards/">Mary and George Nowinski Award for Excellence in Undergraduate Research Award</a> during my time performing research.
+  I received my Bachelor in Mechanical Engineering with Computer Science and Mathematics Minors from the <a href="https://www.udel.edu/">University of Delaware</a> in 2017.
+</p>
+<p style="text-align:center;margin-top:2em;">
+   <a href="mailto:pgeneva@udel.edu">Email</a> /
+   <a href="downloads/curriculum_vitae.pdf">CV</a> /
+   <a href="downloads/bio.txt">Bio</a> /
+   <a href="https://scholar.google.com/citations?hl=en&user=GGcg4mwAAAAJ">Scholar</a> /
+   <a href="https://twitter.com/PatrickGeneva1">Twitter</a> /
+   <a href="https://github.com/goldbattle/">Github</a>
+</p>
+<p style="text-align:center">
+   <a href="pages/notes.html">Notes</a> /
+   <a href="pages/projects.html">Projects</a> /
+   <a href="pages/readings.html">Readings</a> /
+   <a href="pages/fsae.html">FSAE</a>
+</p>
+</td>
+<td style="padding:2.5%;width:40%;max-width:40%" id="profile">
+<a href="downloads/profile.jpg">
+   <img style="width:320px;max-width:100%" alt="profile photo" src="downloads/profile.jpg">
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<tbody>
+<tr>
+<td style="padding:20px;width:100%;vertical-align:middle">
+<heading>Research</heading>
+<p>
+  My primary interest is enabling autonomy for robots through robust and accurate state estimation.
+  Much of my research is mainly focused on visual (cameras) and inertial (IMUs) sensing modalities, but have dabbled in different sensing types to try to either improve robustness or increase overall trajectory accuracy.
+  I also maintain the <a href="https://github.com/rpng/open_vins">OpenVINS</a> project, which is a state-of-the-art filter-based visual-inertial estimator that was developed in house by our research group.
+  I have <span class="highlight">highlighted</span> papers that are of special interest or what I consider my most interesting works.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!-- ====================================== -->
+<!-- ====================================== -->
+<!-- ====================================== -->
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody><tr><td style="padding:20px;width:100%;vertical-align:middle">
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+<tr onmouseout="stop('Chen2023IROS')" onmouseover="start('Chen2023IROS')" class="highlight">
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Chen2023IROS2.png"><img lazyload async id="Chen2023IROS_1" src="thumbnails/Chen2023IROS2.png" /></div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<papertitle>Optimization-based VINS: Consistency, Marginalization, and FEJ</papertitle><br>
+Chuchu Chen, 
+<strong>Patrick Geneva</strong>, 
+Yuxiang Peng, 
+Woosik Lee, 
+Guoquan Huang
+<br>
+<em>2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2023
+<br>
+<a href="downloads/bibtex/Chen2023IROS.bib">bibtex</a> / 
+<a href="downloads/papers/Chen2023IROS.pdf">pdf</a> / 
+<a href="downloads/reports/tr_graph.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=SyttewPtRjc">talk</a> / 
+<a href="downloads/slides/Chen2023IROS.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+
+<tr onmouseout="stop('Yang2023ARXIV')" onmouseover="start('Yang2023ARXIV')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Yang2023ARXIV.png"><img lazyload async id="Yang2023ARXIV_1" src="thumbnails/Yang2023ARXIV.png" /></div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<papertitle>Multi-Visual-Inertial System: Analysis, Calibration and Estimation</papertitle><br>
+Yulin Yang, 
+<strong>Patrick Geneva</strong>, 
+Guoquan Huang
+<br>
+<em>arXiv</em>, 2023
+<br>
+<a href="downloads/bibtex/Yang2023ARXIV.bib">bibtex</a> / 
+<a href="downloads/preprints/Yang2023ARXIV.pdf">pdf</a> / 
+<a href="https://arxiv.org/abs/2308.05303">arXiv</a> / 
+<a href="downloads/reports/tr_mvis.pdf">tech report</a> / 
+<a href="https://openmvis.com/MvisData.html">dataset</a>
+<p></p>
+</td>
+</tr>
+
+
+<tr onmouseout="stop('Merrill2023RSS')" onmouseover="start('Merrill2023RSS')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Merrill2023RSS.png"><div class="two" id="Merrill2023RSS_2">
+<img lazyload async id="Merrill2023RSS_3" data-src="images_compressed/Merrill2023RSS.webp" type="image/webp" />
+</div>
+<img lazyload async id="Merrill2023RSS_1" src="thumbnails/Merrill2023RSS.png" /><script type="text/javascript">stop("Merrill2023RSS")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://roboticsconference.org/program/papers/072/"><papertitle>Fast Monocular Visual-Inertial Initialization Leveraging Learned Single-View Depth</papertitle></a>
+<br>
+Nathaniel Merrill<sup>*</sup>, 
+<strong>Patrick Geneva<sup>*</sup></strong>, 
+Saimouli Katragadda, 
+Chuchu Chen, 
+Guoquan Huang
+<br>
+<em>Robotics: Science and Systems XIV</em>, 2023
+<br>
+<a href="downloads/bibtex/Merrill2023RSS.bib">bibtex</a> / 
+<a href="downloads/papers/Merrill2023RSS.pdf">pdf</a> / 
+<a href="downloads/reports/tr_init_depth.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=O04EywptgH8">video</a> / 
+<a href="https://www.youtube.com/watch?v=gjq_PJDOgdk">talk</a> / 
+<a href="downloads/slides/Merrill2023RSS.pdf">slides</a> / 
+<a href="downloads/posters/Merrill2023RSS.pdf">poster</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Chen2023ICRA')" onmouseover="start('Chen2023ICRA')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Chen2023ICRA.png"><div class="two" id="Chen2023ICRA_2">
+<img lazyload async id="Chen2023ICRA_3" data-src="images_compressed/Chen2023ICRA.webp" type="image/webp" />
+</div>
+<img lazyload async id="Chen2023ICRA_1" src="thumbnails/Chen2023ICRA.png" /><script type="text/javascript">stop("Chen2023ICRA")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<papertitle>Monocular Visual-Inertial Odometry with Planar Regularities</papertitle><br>
+Chuchu Chen<sup>*</sup>, 
+<strong>Patrick Geneva<sup>*</sup></strong>, 
+Yuxiang Peng, 
+Woosik Lee, 
+Guoquan Huang
+<br>
+<em>2023 International Conference on Robotics and Automation (ICRA)</em>, 2023
+<br>
+<a href="downloads/bibtex/Chen2023ICRA.bib">bibtex</a> / 
+<a href="downloads/papers/Chen2023ICRA.pdf">pdf</a> / 
+<a href="https://www.youtube.com/watch?v=bec7LbYaOS8">video</a> / 
+<a href="https://www.youtube.com/watch?v=Y0MY7dZpkJA">talk</a> / 
+<a href="https://github.com/rpng/ov_plane">code</a> / 
+<a href="https://github.com/rpng/ar_table_dataset">dataset</a> / 
+<a href="downloads/slides/Chen2023ICRA.pdf">slides</a> / 
+<a href="downloads/posters/Chen2023ICRA.pdf">poster</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Yang2023TRO')" onmouseover="start('Yang2023TRO')" class="highlight">
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Yang2022ARXIV.png"><img lazyload async id="Yang2023TRO_1" src="thumbnails/Yang2022ARXIV.png" /></div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/10145468"><papertitle>Online Self-Calibration for Visual-Inertial Navigation Systems: Models, Analysis and Degeneracy</papertitle></a>
+<br>
+Yulin Yang, 
+<strong>Patrick Geneva</strong>, 
+Xingxing Zuo, 
+Guoquan Huang
+<br>
+<em>IEEE Transactions on Robotics</em>, 2023
+<br>
+<a href="downloads/bibtex/Yang2023TRO.bib">bibtex</a> / 
+<a href="downloads/preprints/Yang2023TRO.pdf">pdf</a> / 
+<a href="https://arxiv.org/abs/2201.09170">arXiv</a> / 
+<a href="downloads/reports/tr_fullcalib.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=MP4ADABtqXQ">video</a> / 
+<a href="https://github.com/rpng/open_vins/pull/337">code</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Chen2022IROS')" onmouseover="start('Chen2022IROS')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Chen2022IROS.png"><div class="two" id="Chen2022IROS_2">
+<img lazyload async id="Chen2022IROS_3" data-src="images_compressed/Chen2022IROS.webp" type="image/webp" />
+</div>
+<img lazyload async id="Chen2022IROS_1" src="thumbnails/Chen2022IROS.png" /><script type="text/javascript">stop("Chen2022IROS")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/9982263"><papertitle>Visual-Inertial-Aided Online MAV System Identification</papertitle></a>
+<br>
+Chuchu Chen<sup>*</sup>, 
+Yulin Yang<sup>*</sup>, 
+<strong>Patrick Geneva</strong>, 
+Woosik Lee, 
+Guoquan Huang
+<br>
+<em>2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2022
+<br>
+<a href="downloads/bibtex/Chen2022IROS.bib">bibtex</a> / 
+<a href="downloads/papers/Chen2022IROS.pdf">pdf</a> / 
+<a href="downloads/reports/tr_mav.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=hxQOP8arCHo">video</a> / 
+<a href="https://www.youtube.com/watch?v=zM77c9gZfP4">talk</a> / 
+<a href="downloads/slides/Chen2022IROS.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Geneva2022ICRA')" onmouseover="start('Geneva2022ICRA')" class="highlight">
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Geneva2022ICRA.png"><div class="two" id="Geneva2022ICRA_2">
+<img lazyload async id="Geneva2022ICRA_3" data-src="images_compressed/Geneva2022ICRA.webp" type="image/webp" />
+</div>
+<img lazyload async id="Geneva2022ICRA_1" src="thumbnails/Geneva2022ICRA.png" /><script type="text/javascript">stop("Geneva2022ICRA")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/9811829"><papertitle>Map-based Visual-Inertial Localization: A Numerical Study</papertitle></a>
+<br>
+<strong>Patrick Geneva</strong>, 
+Guoquan Huang
+<br>
+<em>2022 International Conference on Robotics and Automation (ICRA)</em>, 2022
+<br>
+<a href="downloads/bibtex/Geneva2022ICRA.bib">bibtex</a> / 
+<a href="downloads/papers/Geneva2022ICRA.pdf">pdf</a> / 
+<a href="downloads/reports/tr_mapping.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=4msBVlRFj3M">video</a> / 
+<a href="https://www.youtube.com/watch?v=c-hmFsRQW5s">talk</a> / 
+<a href="downloads/slides/Geneva2022ICRA.pdf">slides</a> / 
+<a href="downloads/posters/Geneva2022ICRA.pdf">poster</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Chen2022ICRA')" onmouseover="start('Chen2022ICRA')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Chen2022ICRA.png"><img lazyload async id="Chen2022ICRA_1" src="thumbnails/Chen2022ICRA.png" /></div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/9811831"><papertitle>FEJ2: A Consistent Visual-Inertial State Estimator Design</papertitle></a>
+<br>
+Chuchu Chen, 
+Yulin Yang, 
+<strong>Patrick Geneva</strong>, 
+Guoquan Huang
+<br>
+<em>2022 International Conference on Robotics and Automation (ICRA)</em>, 2022
+<br>
+<a href="downloads/bibtex/Chen2022ICRA.bib">bibtex</a> / 
+<a href="downloads/papers/Chen2022ICRA.pdf">pdf</a> / 
+<a href="downloads/reports/tr_fej2.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=bzYnrbNxtvw">talk</a> / 
+<a href="downloads/slides/Chen2022ICRA.pdf">slides</a> / 
+<a href="downloads/posters/Chen2022ICRA.pdf">poster</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Lee2022ICRA')" onmouseover="start('Lee2022ICRA')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Lee2022ICRA.png"><div class="two" id="Lee2022ICRA_2">
+<img lazyload async id="Lee2022ICRA_3" data-src="images_compressed/Lee2022ICRA.webp" type="image/webp" />
+</div>
+<img lazyload async id="Lee2022ICRA_1" src="thumbnails/Lee2022ICRA.png" /><script type="text/javascript">stop("Lee2022ICRA")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/9811362"><papertitle>Tightly-coupled GNSS-aided Visual-Inertial Localization</papertitle></a>
+<br>
+Woosik Lee, 
+<strong>Patrick Geneva</strong>, 
+Yulin Yang, 
+Guoquan Huang
+<br>
+<em>2022 International Conference on Robotics and Automation (ICRA)</em>, 2022
+<br>
+<a href="downloads/bibtex/Lee2022ICRA.bib">bibtex</a> / 
+<a href="downloads/papers/Lee2022ICRA.pdf">pdf</a> / 
+<a href="https://www.youtube.com/watch?v=nDCc54I4_74">talk</a> / 
+<a href="downloads/slides/Lee2022ICRA.pdf">slides</a> / 
+<a href="downloads/posters/Lee2022ICRA.pdf">poster</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Merrill2021ICRA')" onmouseover="start('Merrill2021ICRA')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Merrill2021ICRA.png"><div class="two" id="Merrill2021ICRA_2">
+<img lazyload async id="Merrill2021ICRA_3" data-src="images_compressed/Merrill2021ICRA.webp" type="image/webp" />
+</div>
+<img lazyload async id="Merrill2021ICRA_1" src="thumbnails/Merrill2021ICRA.png" /><script type="text/javascript">stop("Merrill2021ICRA")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/document/9561174"><papertitle>Robust monocular visual-inertial depth completion for embedded systems</papertitle></a>
+<br>
+Nathaniel Merrill<sup>*</sup>, 
+<strong>Patrick Geneva<sup>*</sup></strong>, 
+Guoquan Huang
+<br>
+<em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2021
+<br>
+<a href="downloads/bibtex/Merrill2021ICRA.bib">bibtex</a> / 
+<a href="downloads/papers/Merrill2021ICRA.pdf">pdf</a> / 
+<a href="https://www.youtube.com/watch?v=wHk3pT1n8kA">video</a> / 
+<a href="https://www.youtube.com/watch?v=P7eSQFXcnPY">talk</a> / 
+<a href="downloads/slides/Merrill2021ICRA.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Eckenhoff2021TRO')" onmouseover="start('Eckenhoff2021TRO')" class="highlight">
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Eckenhoff2021TRO.png"><div class="two" id="Eckenhoff2021TRO_2">
+<img lazyload async id="Eckenhoff2021TRO_3" data-src="images_compressed/Eckenhoff2021TRO.webp" type="image/webp" />
+</div>
+<img lazyload async id="Eckenhoff2021TRO_1" src="thumbnails/Eckenhoff2021TRO.png" /><script type="text/javascript">stop("Eckenhoff2021TRO")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/document/9363450"><papertitle>MIMC-VINS: A Versatile and Resilient Multi-IMU Multi-Camera Visual-Inertial Navigation System</papertitle></a>
+<br>
+Kevin Eckenhoff, 
+<strong>Patrick Geneva</strong>, 
+Guoquan Huang
+<br>
+<em>IEEE Transactions on Robotics</em>, 2021
+<br>
+<a href="downloads/bibtex/Eckenhoff2021TRO.bib">bibtex</a> / 
+<a href="downloads/preprints/Eckenhoff2021TRO.pdf">pdf</a> / 
+<a href="https://arxiv.org/abs/2006.15699">arXiv</a> / 
+<a href="https://www.youtube.com/watch?v=my1IjdJ4irY">video</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Zhu2021IROS')" onmouseover="start('Zhu2021IROS')" class="highlight">
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Zhu2021IROS.png"><div class="two" id="Zhu2021IROS_2">
+<img lazyload async id="Zhu2021IROS_3" data-src="images_compressed/Zhu2021IROS.webp" type="image/webp" />
+</div>
+<img lazyload async id="Zhu2021IROS_1" src="thumbnails/Zhu2021IROS.png" /><script type="text/javascript">stop("Zhu2021IROS")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/9636031"><papertitle>Distributed Visual-Inertial Cooperative Localization</papertitle></a>
+<br>
+Pengxiang Zhu<sup>*</sup>, 
+<strong>Patrick Geneva<sup>*</sup></strong>, 
+Wei Ren, 
+Guoquan Huang
+<br>
+<em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2021
+<br>
+<a href="downloads/bibtex/Zhu2021IROS.bib">bibtex</a> / 
+<a href="downloads/papers/Zhu2021IROS.pdf">pdf</a> / 
+<a href="https://arxiv.org/abs/2103.12770">arXiv</a> / 
+<a href="https://www.youtube.com/watch?v=boHBcVoMKk8">video</a> / 
+<a href="https://www.youtube.com/watch?v=apYTA2qoWAM">talk</a> / 
+<a href="downloads/slides/Zhu2021IROS.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Yang2021ICRAws')" onmouseover="start('Yang2021ICRAws')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Yang2021ICRAws.png"><div class="two" id="Yang2021ICRAws_2">
+<img lazyload async id="Yang2021ICRAws_3" data-src="images_compressed/Yang2021ICRAws.webp" type="image/webp" />
+</div>
+<img lazyload async id="Yang2021ICRAws_1" src="thumbnails/Yang2021ICRAws.png" /><script type="text/javascript">stop("Yang2021ICRAws")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://udel.edu/~ghuang/icra21-vins-workshop/"><papertitle>iCalib: Inertial Aided Multi-Sensor Calibration</papertitle></a>
+<br>
+Yulin Yang, 
+Woosik Lee, 
+Philip Osteen, 
+<strong>Patrick Geneva</strong>, 
+Xingxing Zuo, 
+Guoquan Huang
+<br>
+<em>Workshop on Visual-Inertial Navigation Systems</em>, 2021
+<br>
+<a href="downloads/bibtex/Yang2021ICRAws.bib">bibtex</a> / 
+<a href="downloads/papers/Yang2021ICRAws.pdf">pdf</a> / 
+<a href="https://www.youtube.com/watch?v=0upriLXGEC0">talk</a> / 
+<a href="downloads/slides/Yang2021ICRAws.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Geneva2020ICRA')" onmouseover="start('Geneva2020ICRA')" class="highlight">
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Geneva2020ICRA.png"><div class="two" id="Geneva2020ICRA_2">
+<img lazyload async id="Geneva2020ICRA_3" data-src="images_compressed/Geneva2020ICRA.webp" type="image/webp" />
+</div>
+<img lazyload async id="Geneva2020ICRA_1" src="thumbnails/Geneva2020ICRA.png" /><script type="text/javascript">stop("Geneva2020ICRA")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/9196524"><papertitle>OpenVINS: A Research Platform for Visual-Inertial Estimation</papertitle></a>
+<br>
+<strong>Patrick Geneva</strong>, 
+Kevin Eckenhoff, 
+Woosik Lee, 
+Yulin Yang, 
+Guoquan Huang
+<br>
+<em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2020
+<br>
+<a href="downloads/bibtex/Geneva2020ICRA.bib">bibtex</a> / 
+<a href="downloads/papers/Geneva2020ICRA.pdf">pdf</a> / 
+<a href="https://www.youtube.com/watch?v=KCX51GvYGss&list=PLYoEmkLJNcXGMrW1QXdegXAu28ei5Xec-&index=4">video</a> / 
+<a href="https://www.youtube.com/watch?v=CIwNwmFroLI">talk</a> / 
+<a href="https://github.com/rpng/open_vins">code</a> / 
+<a href="downloads/slides/Geneva2020ICRA.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Eckenhoff2020ICRA')" onmouseover="start('Eckenhoff2020ICRA')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Eckenhoff2020ICRA.png"><div class="two" id="Eckenhoff2020ICRA_2">
+<img lazyload async id="Eckenhoff2020ICRA_3" data-src="images_compressed/Eckenhoff2020ICRA.webp" type="image/webp" />
+</div>
+<img lazyload async id="Eckenhoff2020ICRA_1" src="thumbnails/Eckenhoff2020ICRA.png" /><script type="text/javascript">stop("Eckenhoff2020ICRA")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/9197352"><papertitle>Schmidt-EKF-based Visual-Inertial Moving Object Tracking</papertitle></a>
+<br>
+Kevin Eckenhoff, 
+<strong>Patrick Geneva</strong>, 
+Nathaniel Merrill, 
+Guoquan Huang
+<br>
+<em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2020
+<br>
+<a href="downloads/bibtex/Eckenhoff2020ICRA.bib">bibtex</a> / 
+<a href="downloads/papers/Eckenhoff2020ICRA.pdf">pdf</a> / 
+<a href="https://www.youtube.com/watch?v=UKsUfqhKX0M">video</a> / 
+<a href="https://www.youtube.com/watch?v=uhD7_Ygf5c0">talk</a> / 
+<a href="downloads/slides/Eckenhoff2020ICRA.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Lee2020ICRA')" onmouseover="start('Lee2020ICRA')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Lee2020ICRA.png"><div class="two" id="Lee2020ICRA_2">
+<img lazyload async id="Lee2020ICRA_3" data-src="images_compressed/Lee2020ICRA.webp" type="image/webp" />
+</div>
+<img lazyload async id="Lee2020ICRA_1" src="thumbnails/Lee2020ICRA.png" /><script type="text/javascript">stop("Lee2020ICRA")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/document/9197029"><papertitle>Intermittent GPS-aided VIO: Online Initialization and Calibration</papertitle></a>
+<br>
+Woosik Lee, 
+Kevin Eckenhoff, 
+<strong>Patrick Geneva</strong>, 
+Guoquan Huang
+<br>
+<em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2020
+<br>
+<a href="downloads/bibtex/Lee2020ICRA.bib">bibtex</a> / 
+<a href="downloads/papers/Lee2020ICRA.pdf">pdf</a> / 
+<a href="downloads/reports/tr_gps-vio.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=-nZPq7p7ykY">video</a> / 
+<a href="https://www.youtube.com/watch?v=nSqZiqf86xw">talk</a> / 
+<a href="https://docs.openvins.com/gs-datasets.html#gs-data-rpng">dataset</a> / 
+<a href="downloads/slides/Lee2020ICRA.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Geneva2020IROS')" onmouseover="start('Geneva2020IROS')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Geneva2020IROS.png"><div class="two" id="Geneva2020IROS_2">
+<img lazyload async id="Geneva2020IROS_3" data-src="images_compressed/Geneva2020IROS.webp" type="image/webp" />
+</div>
+<img lazyload async id="Geneva2020IROS_1" src="thumbnails/Geneva2020IROS.png" /><script type="text/javascript">stop("Geneva2020IROS")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/9341264"><papertitle>Versatile 3D Multi-Sensor Fusion for Lightweight 2D Localization</papertitle></a>
+<br>
+<strong>Patrick Geneva<sup>*</sup></strong>, 
+Nathaniel Merrill<sup>*</sup>, 
+Yulin Yang, 
+Chuchu Chen, 
+Woosik Lee, 
+Guoquan Huang
+<br>
+<em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2020
+<br>
+<a href="downloads/bibtex/Geneva2020IROS.bib">bibtex</a> / 
+<a href="downloads/papers/Geneva2020IROS.pdf">pdf</a> / 
+<a href="https://www.youtube.com/watch?v=sxq75Cgeb48">video</a> / 
+<a href="downloads/slides/Geneva2020IROS.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Lee2020IROS')" onmouseover="start('Lee2020IROS')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Lee2020IROS.png"><div class="two" id="Lee2020IROS_2">
+<img lazyload async id="Lee2020IROS_3" data-src="images_compressed/Lee2020IROS.webp" type="image/webp" />
+</div>
+<img lazyload async id="Lee2020IROS_1" src="thumbnails/Lee2020IROS.png" /><script type="text/javascript">stop("Lee2020IROS")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/9341161"><papertitle>Visual-Inertial-Wheel Odometry with Online Calibration</papertitle></a>
+<br>
+Woosik Lee, 
+Kevin Eckenhoff, 
+Yulin Yang, 
+<strong>Patrick Geneva</strong>, 
+Guoquan Huang
+<br>
+<em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2020
+<br>
+<a href="downloads/bibtex/Lee2020IROS.bib">bibtex</a> / 
+<a href="downloads/papers/Lee2020IROS.pdf">pdf</a> / 
+<a href="downloads/reports/tr_wheel-vio.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=4DH-J5OtjLc">video</a> / 
+<a href="downloads/slides/Lee2020IROS.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Zuo2020IROS')" onmouseover="start('Zuo2020IROS')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Zuo2020IROS.png"><div class="two" id="Zuo2020IROS_2">
+<img lazyload async id="Zuo2020IROS_3" data-src="images_compressed/Zuo2020IROS.webp" type="image/webp" />
+</div>
+<img lazyload async id="Zuo2020IROS_1" src="thumbnails/Zuo2020IROS.png" /><script type="text/javascript">stop("Zuo2020IROS")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/9340704"><papertitle>LIC-Fusion 2.0: LiDAR-Inertial-Camera Odometry with Sliding-Window Plane-Feature Tracking</papertitle></a>
+<br>
+Xingxing Zuo, 
+Yulin Yang, 
+<strong>Patrick Geneva</strong>, 
+Jiajun Lv, 
+Yong Liu, 
+Guoquan Huang, 
+Marc Pollefeys
+<br>
+<em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2020
+<br>
+<a href="downloads/bibtex/Zuo2020IROS.bib">bibtex</a> / 
+<a href="downloads/papers/Zuo2020IROS.pdf">pdf</a> / 
+<a href="https://arxiv.org/abs/2008.07196">arXiv</a> / 
+<a href="downloads/reports/tr_lic2.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=waE5nepxD-Q">video</a> / 
+<a href="https://www.youtube.com/watch?v=wOnd7rladek">talk</a> / 
+<a href="downloads/slides/Zuo2020IROS.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Yang2020RSS')" onmouseover="start('Yang2020RSS')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Yang2020RSS.png"><img lazyload async id="Yang2020RSS_1" src="thumbnails/Yang2020RSS.png" /></div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://roboticsconference.org/2020/program/papers/26.html"><papertitle>Online IMU Intrinsic Calibration: Is It Necessary?</papertitle></a>
+<br>
+Yulin Yang, 
+<strong>Patrick Geneva</strong>, 
+Xingxing Zuo, 
+Guoquan Huang
+<br>
+<em>Robotics: Science and Systems XVI</em>, 2020
+<br>
+<a href="downloads/bibtex/Yang2020RSS.bib">bibtex</a> / 
+<a href="downloads/papers/Yang2020RSS.pdf">pdf</a> / 
+<a href="downloads/reports/tr_intrinsic.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=uf367hP6s3M">talk</a> / 
+<a href="downloads/slides/Yang2020RSS.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Eckenhoff2019RAL')" onmouseover="start('Eckenhoff2019RAL')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Eckenhoff2019RAL.png"><div class="two" id="Eckenhoff2019RAL_2">
+<img lazyload async id="Eckenhoff2019RAL_3" data-src="images_compressed/Eckenhoff2019RAL.webp" type="image/webp" />
+</div>
+<img lazyload async id="Eckenhoff2019RAL_1" src="thumbnails/Eckenhoff2019RAL.png" /><script type="text/javascript">stop("Eckenhoff2019RAL")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/8629939"><papertitle>Tightly-Coupled Visual-Inertial Localization and 3D Rigid-Body Target Tracking</papertitle></a>
+<br>
+Kevin Eckenhoff, 
+Yulin Yang, 
+<strong>Patrick Geneva</strong>, 
+Guoquan Huang
+<br>
+<em>IEEE Robotics and Automation Letters</em>, 2019
+<br>
+<a href="downloads/bibtex/Eckenhoff2019RAL.bib">bibtex</a> / 
+<a href="downloads/preprints/Eckenhoff2019RAL.pdf">pdf</a> / 
+<a href="downloads/reports/tr_target.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=qsh20EhdzVQ&list=PLYoEmkLJNcXEiyxqPL1F7UpXLranPy4L1">video</a> / 
+<a href="downloads/slides/Eckenhoff2019RAL.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Yang2019RAL')" onmouseover="start('Yang2019RAL')" class="highlight">
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Yang2019RAL.png"><div class="two" id="Yang2019RAL_2">
+<img lazyload async id="Yang2019RAL_3" data-src="images_compressed/Yang2019RAL.webp" type="image/webp" />
+</div>
+<img lazyload async id="Yang2019RAL_1" src="thumbnails/Yang2019RAL.png" /><script type="text/javascript">stop("Yang2019RAL")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/8616792"><papertitle>Degenerate Motion Analysis for Aided INS with Online Spatial and Temporal Calibration</papertitle></a>
+<br>
+Yulin Yang, 
+<strong>Patrick Geneva</strong>, 
+Kevin Eckenhoff, 
+Guoquan Huang
+<br>
+<em>IEEE Robotics and Automation Letters</em>, 2019
+<br>
+<a href="downloads/bibtex/Yang2019RAL.bib">bibtex</a> / 
+<a href="downloads/preprints/Yang2019RAL.pdf">pdf</a> / 
+<a href="downloads/reports/tr_calib.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=fjjDm50LcWs">video</a> / 
+<a href="downloads/posters/Yang2019RAL.pdf">poster</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Zuo2019RAL')" onmouseover="start('Zuo2019RAL')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Zuo2019RAL.png"><div class="two" id="Zuo2019RAL_2">
+<img lazyload async id="Zuo2019RAL_3" data-src="images_compressed/Zuo2019RAL.webp" type="image/webp" />
+</div>
+<img lazyload async id="Zuo2019RAL_1" src="thumbnails/Zuo2019RAL.png" /><script type="text/javascript">stop("Zuo2019RAL")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/document/8756059"><papertitle>Visual-Inertial Localization with Prior LiDAR Map Constraints</papertitle></a>
+<br>
+Xingxing Zuo<sup>*</sup>, 
+<strong>Patrick Geneva<sup>*</sup></strong>, 
+Yulin Yang, 
+Wenlong Ye, 
+Yong Liu, 
+Guoquan Huang
+<br>
+<em>IEEE Robotics and Automation Letters</em>, 2019
+<br>
+<a href="downloads/bibtex/Zuo2019RAL.bib">bibtex</a> / 
+<a href="downloads/preprints/Zuo2019RAL.pdf">pdf</a> / 
+<a href="https://www.youtube.com/watch?v=76fXMVhhX4E">video</a> / 
+<a href="downloads/slides/Zuo2019RAL.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Yang2019IROS')" onmouseover="start('Yang2019IROS')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Yang2019IROS.png"><div class="two" id="Yang2019IROS_2">
+<img lazyload async id="Yang2019IROS_3" data-src="images_compressed/Yang2019IROS.webp" type="image/webp" />
+</div>
+<img lazyload async id="Yang2019IROS_1" src="thumbnails/Yang2019IROS.png" /><script type="text/javascript">stop("Yang2019IROS")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/document/8967905"><papertitle>Visual-Inertial Navigation with Point and Line Features</papertitle></a>
+<br>
+Yulin Yang, 
+<strong>Patrick Geneva</strong>, 
+Kevin Eckenhoff, 
+Guoquan Huang
+<br>
+<em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2019
+<br>
+<a href="downloads/bibtex/Yang2019IROS.bib">bibtex</a> / 
+<a href="downloads/papers/Yang2019IROS.pdf">pdf</a> / 
+<a href="https://www.youtube.com/watch?v=tEd2HCTNNmI">video</a> / 
+<a href="downloads/slides/Yang2019IROS.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Zuo2019IROS')" onmouseover="start('Zuo2019IROS')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Zuo2019IROS.png"><div class="two" id="Zuo2019IROS_2">
+<img lazyload async id="Zuo2019IROS_3" data-src="images_compressed/Zuo2019IROS.webp" type="image/webp" />
+</div>
+<img lazyload async id="Zuo2019IROS_1" src="thumbnails/Zuo2019IROS.png" /><script type="text/javascript">stop("Zuo2019IROS")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/8967746"><papertitle>LIC-Fusion: LiDAR-Inertial-Camera Odometry</papertitle></a>
+<br>
+Xingxing Zuo, 
+<strong>Patrick Geneva</strong>, 
+Woosik Lee, 
+Yong Liu, 
+Guoquan Huang
+<br>
+<em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2019
+<br>
+<a href="downloads/bibtex/Zuo2019IROS.bib">bibtex</a> / 
+<a href="downloads/papers/Zuo2019IROS.pdf">pdf</a> / 
+<a href="https://arxiv.org/abs/1909.04102">arXiv</a> / 
+<a href="https://www.youtube.com/watch?v=z8WG4miBk3s">video</a> / 
+<a href="downloads/slides/Zuo2019IROS.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Geneva2019ICRA')" onmouseover="start('Geneva2019ICRA')" class="highlight">
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Geneva2019ICRA.png"><div class="two" id="Geneva2019ICRA_2">
+<img lazyload async id="Geneva2019ICRA_3" data-src="images_compressed/Geneva2019ICRA.webp" type="image/webp" />
+</div>
+<img lazyload async id="Geneva2019ICRA_1" src="thumbnails/Geneva2019ICRA.png" /><script type="text/javascript">stop("Geneva2019ICRA")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/document/8793836"><papertitle>A Linear-Complexity EKF for Visual-Inertial Navigation with Loop Closures</papertitle></a>
+<br>
+<strong>Patrick Geneva</strong>, 
+Kevin Eckenhoff, 
+Guoquan Huang
+<br>
+<em>International Conference on Robotics and Automation (ICRA)</em>, 2019
+<br>
+<a href="downloads/bibtex/Geneva2019ICRA.bib">bibtex</a> / 
+<a href="downloads/papers/Geneva2019ICRA.pdf">pdf</a> / 
+<a href="downloads/reports/tr_loop.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=YYN55LlkWzw">video</a> / 
+<a href="downloads/posters/Geneva2019ICRA.pdf">poster</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Eckenhoff2019ICRAa')" onmouseover="start('Eckenhoff2019ICRAa')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Eckenhoff2019ICRAa.png"><div class="two" id="Eckenhoff2019ICRAa_2">
+<img lazyload async id="Eckenhoff2019ICRAa_3" data-src="images_compressed/Eckenhoff2019ICRAa.webp" type="image/webp" />
+</div>
+<img lazyload async id="Eckenhoff2019ICRAa_1" src="thumbnails/Eckenhoff2019ICRAa.png" /><script type="text/javascript">stop("Eckenhoff2019ICRAa")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/document/8793886"><papertitle>Multi-Camera Visual-Inertial Navigation with Online Intrinsic and Extrinsic Calibration</papertitle></a>
+<br>
+Kevin Eckenhoff, 
+<strong>Patrick Geneva</strong>, 
+Jesse Bloecker, 
+Guoquan Huang
+<br>
+<em>International Conference on Robotics and Automation (ICRA)</em>, 2019
+<br>
+<a href="downloads/bibtex/Eckenhoff2019ICRAa.bib">bibtex</a> / 
+<a href="downloads/papers/Eckenhoff2019ICRAa.pdf">pdf</a> / 
+<a href="downloads/reports/tr_mc-vins.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=30z_MfOBgVE">video</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Eckenhoff2019ICRAb')" onmouseover="start('Eckenhoff2019ICRAb')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Eckenhoff2019ICRAb.png"><div class="two" id="Eckenhoff2019ICRAb_2">
+<img lazyload async id="Eckenhoff2019ICRAb_3" data-src="images_compressed/Eckenhoff2019ICRAb.webp" type="image/webp" />
+</div>
+<img lazyload async id="Eckenhoff2019ICRAb_1" src="thumbnails/Eckenhoff2019ICRAb.png" /><script type="text/javascript">stop("Eckenhoff2019ICRAb")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/abstract/document/8794295"><papertitle>Sensor-Failure-Resilient Multi-IMU Visual-Inertial Navigation</papertitle></a>
+<br>
+Kevin Eckenhoff, 
+<strong>Patrick Geneva</strong>, 
+Guoquan Huang
+<br>
+<em>International Conference on Robotics and Automation (ICRA)</em>, 2019
+<br>
+<a href="downloads/bibtex/Eckenhoff2019ICRAb.bib">bibtex</a> / 
+<a href="downloads/papers/Eckenhoff2019ICRAb.pdf">pdf</a> / 
+<a href="https://www.youtube.com/watch?v=TqbzqLgnIZc">video</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Yang2019ICRAb')" onmouseover="start('Yang2019ICRAb')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Yang2019ICRAb.png"><div class="two" id="Yang2019ICRAb_2">
+<img lazyload async id="Yang2019ICRAb_3" data-src="images_compressed/Yang2019ICRAb.webp" type="image/webp" />
+</div>
+<img lazyload async id="Yang2019ICRAb_1" src="thumbnails/Yang2019ICRAb.png" /><script type="text/javascript">stop("Yang2019ICRAb")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/document/8794078"><papertitle>Tightly-Coupled Aided Inertial Navigation with Point and Plane Features</papertitle></a>
+<br>
+Yulin Yang, 
+<strong>Patrick Geneva</strong>, 
+Xingxing Zuo, 
+Kevin Eckenhoff, 
+Yong Liu, 
+Guoquan Huang
+<br>
+<em>International Conference on Robotics and Automation (ICRA)</em>, 2019
+<br>
+<a href="downloads/bibtex/Yang2019ICRAb.bib">bibtex</a> / 
+<a href="downloads/papers/Yang2019ICRAb.pdf">pdf</a> / 
+<a href="downloads/reports/tr_vinpp.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=QvmbeowSJeI">video</a> / 
+<a href="downloads/posters/Yang2019ICRAb.pdf">poster</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Geneva2019CVPR')" onmouseover="start('Geneva2019CVPR')" class="highlight">
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Geneva2019CVPR.png"><div class="two" id="Geneva2019CVPR_2">
+<img lazyload async id="Geneva2019CVPR_3" data-src="images_compressed/Geneva2019CVPR.webp" type="image/webp" />
+</div>
+<img lazyload async id="Geneva2019CVPR_1" src="thumbnails/Geneva2019CVPR.png" /><script type="text/javascript">stop("Geneva2019CVPR")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://openaccess.thecvf.com/content_CVPR_2019/html/Geneva_An_Efficient_Schmidt-EKF_for_3D_Visual-Inertial_SLAM_CVPR_2019_paper.html"><papertitle>An Efficient Schmidt-EKF for 3D Visual-Inertial SLAM</papertitle></a>
+<br>
+<strong>Patrick Geneva</strong>, 
+James Maley, 
+Guoquan Huang
+<br>
+<em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>, 2019
+<br>
+<a href="downloads/bibtex/Geneva2019CVPR.bib">bibtex</a> / 
+<a href="downloads/papers/Geneva2019CVPR.pdf">pdf</a> / 
+<a href="https://arxiv.org/abs/1903.08636">arXiv</a> / 
+<a href="downloads/reports/tr_loop.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=HYYTGLPVDlE">video</a> / 
+<a href="downloads/posters/Geneva2019CVPR.pdf">poster</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Eckenhoff2019IJRR')" onmouseover="start('Eckenhoff2019IJRR')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Eckenhoff2019IJRR.png"><div class="two" id="Eckenhoff2019IJRR_2">
+<img lazyload async id="Eckenhoff2019IJRR_3" data-src="images_compressed/Eckenhoff2019IJRR.webp" type="image/webp" />
+</div>
+<img lazyload async id="Eckenhoff2019IJRR_1" src="thumbnails/Eckenhoff2019IJRR.png" /><script type="text/javascript">stop("Eckenhoff2019IJRR")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://journals.sagepub.com/doi/full/10.1177/0278364919835021"><papertitle>Closed-form Preintegration Methods for Graph-based Visual-Inertial Navigation</papertitle></a>
+<br>
+Kevin Eckenhoff, 
+<strong>Patrick Geneva</strong>, 
+Guoquan Huang
+<br>
+<em>The International Journal of Robotics Research</em>, 2019
+<br>
+<a href="downloads/bibtex/Eckenhoff2019IJRR.bib">bibtex</a> / 
+<a href="downloads/preprints/Eckenhoff2019IJRR.pdf">pdf</a> / 
+<a href="https://arxiv.org/abs/1805.02774">arXiv</a> / 
+<a href="downloads/reports/tr_cpi.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=yIgQX2SH_pI&list=PLYoEmkLJNcXHJmh3b6RE2VGZJ1UY8XDtg">video</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Geneva2019IROSws')" onmouseover="start('Geneva2019IROSws')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Geneva2019IROSws.png"><img lazyload async id="Geneva2019IROSws_1" src="thumbnails/Geneva2019IROSws.png" /></div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://udel.edu/~ghuang/iros19-vins-workshop/"><papertitle>OpenVINS: A Research Platform for Visual-Inertial Estimation</papertitle></a>
+<br>
+<strong>Patrick Geneva</strong>, 
+Kevin Eckenhoff, 
+Woosik Lee, 
+Yulin Yang, 
+Guoquan Huang
+<br>
+<em>Workshop on Visual-Inertial Navigation: Challenges and Applications</em>, 2019
+<br>
+<a href="downloads/bibtex/Geneva2019IROSws.bib">bibtex</a> / 
+<a href="downloads/papers/Geneva2019IROSws.pdf">pdf</a> / 
+<a href="https://github.com/rpng/open_vins">code</a> / 
+<a href="downloads/posters/Geneva2019IROSws.pdf">poster</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Geneva2018ICRA')" onmouseover="start('Geneva2018ICRA')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Geneva2018ICRA.png"><div class="two" id="Geneva2018ICRA_2">
+<img lazyload async id="Geneva2018ICRA_3" data-src="images_compressed/Geneva2018ICRA.webp" type="image/webp" />
+</div>
+<img lazyload async id="Geneva2018ICRA_1" src="thumbnails/Geneva2018ICRA.png" /><script type="text/javascript">stop("Geneva2018ICRA")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/document/8460204"><papertitle>Asynchronous Multi-Sensor Fusion for 3D Mapping and Localization</papertitle></a>
+<br>
+<strong>Patrick Geneva</strong>, 
+Kevin Eckenhoff, 
+Guoquan Huang
+<br>
+<em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2018
+<br>
+<a href="downloads/bibtex/Geneva2018ICRA.bib">bibtex</a> / 
+<a href="downloads/papers/Geneva2018ICRA.pdf">pdf</a> / 
+<a href="downloads/reports/tr_async.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=66CNEeQnzb8">video</a> / 
+<a href="downloads/slides/Geneva2018ICRA.pdf">slides</a> / 
+<a href="downloads/posters/Geneva2018ICRA.pdf">poster</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Geneva2018IROS')" onmouseover="start('Geneva2018IROS')" class="highlight">
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Geneva2018IROS.png"><div class="two" id="Geneva2018IROS_2">
+<img lazyload async id="Geneva2018IROS_3" data-src="images_compressed/Geneva2018IROS.webp" type="image/webp" />
+</div>
+<img lazyload async id="Geneva2018IROS_1" src="thumbnails/Geneva2018IROS.png" /><script type="text/javascript">stop("Geneva2018IROS")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/document/8594463"><papertitle>LIPS: LiDAR-Inertial 3D Plane SLAM</papertitle></a>
+<br>
+<strong>Patrick Geneva</strong>, 
+Kevin Eckenhoff, 
+Yulin Yang, 
+Guoquan Huang
+<br>
+<em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2018
+<br>
+<a href="downloads/bibtex/Geneva2018IROS.bib">bibtex</a> / 
+<a href="downloads/papers/Geneva2018IROS.pdf">pdf</a> / 
+<a href="downloads/reports/tr_lips.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=O5XffJHLaRA">video</a> / 
+<a href="https://github.com/rpng/lips">code</a> / 
+<a href="downloads/slides/Geneva2018IROS.pdf">slides</a> / 
+<a href="downloads/posters/Geneva2018IROS.pdf">poster</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Eckenhoff2017ICRA')" onmouseover="start('Eckenhoff2017ICRA')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Eckenhoff2017ICRA.png"><div class="two" id="Eckenhoff2017ICRA_2">
+<img lazyload async id="Eckenhoff2017ICRA_3" data-src="images_compressed/Eckenhoff2017ICRA.webp" type="image/webp" />
+</div>
+<img lazyload async id="Eckenhoff2017ICRA_1" src="thumbnails/Eckenhoff2017ICRA.png" /><script type="text/javascript">stop("Eckenhoff2017ICRA")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://ieeexplore.ieee.org/document/7989171"><papertitle>Direct Visual-Inertial Navigation with Analytical Preintegration</papertitle></a>
+<br>
+Kevin Eckenhoff, 
+<strong>Patrick Geneva</strong>, 
+Guoquan Huang
+<br>
+<em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2017
+<br>
+<a href="downloads/bibtex/Eckenhoff2017ICRA.bib">bibtex</a> / 
+<a href="downloads/papers/Eckenhoff2017ICRA.pdf">pdf</a> / 
+<a href="https://www.youtube.com/watch?v=yIgQX2SH_pI">video</a> / 
+<a href="downloads/slides/Eckenhoff2017ICRA.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Geneva2017PPNIV')" onmouseover="start('Geneva2017PPNIV')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Geneva2017PPNIV.png"><div class="two" id="Geneva2017PPNIV_2">
+<img lazyload async id="Geneva2017PPNIV_3" data-src="images_compressed/Geneva2017PPNIV.webp" type="image/webp" />
+</div>
+<img lazyload async id="Geneva2017PPNIV_1" src="thumbnails/Geneva2017PPNIV.png" /><script type="text/javascript">stop("Geneva2017PPNIV")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<papertitle>Asynchronous Multi-Sensor Fusion for 3D Mapping and Localization</papertitle><br>
+<strong>Patrick Geneva</strong>, 
+Kevin Eckenhoff, 
+Guoquan Huang
+<br>
+<em>Proc. of the 9th Workshop on Planning, Perception and Navigation for Intelligent Vehicles</em>, 2017
+<br>
+<a href="downloads/bibtex/Geneva2017PPNIV.bib">bibtex</a> / 
+<a href="downloads/papers/Geneva2017PPNIV.pdf">pdf</a> / 
+<a href="https://www.youtube.com/watch?v=66CNEeQnzb8">video</a> / 
+<a href="downloads/slides/Geneva2017PPNIV.pdf">slides</a> / 
+<a href="downloads/posters/Geneva2017PPNIV.pdf">poster</a>
+<p></p>
+</td>
+</tr>
+
+<tr onmouseout="stop('Eckenhoff2016WAFR')" onmouseover="start('Eckenhoff2016WAFR')" >
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<a href="images/Eckenhoff2016WAFR.png"><div class="two" id="Eckenhoff2016WAFR_2">
+<img lazyload async id="Eckenhoff2016WAFR_3" data-src="images_compressed/Eckenhoff2016WAFR.webp" type="image/webp" />
+</div>
+<img lazyload async id="Eckenhoff2016WAFR_1" src="thumbnails/Eckenhoff2016WAFR.png" /><script type="text/javascript">stop("Eckenhoff2016WAFR")</script>
+</div>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://link.springer.com/chapter/10.1007/978-3-030-43089-4_4"><papertitle>High-Accuracy Preintegration for Visual-Inertial Navigation</papertitle></a>
+<br>
+Kevin Eckenhoff, 
+<strong>Patrick Geneva</strong>, 
+Guoquan Huang
+<br>
+<em>Proc. of International Workshop on the Algorithmic Foundations of Robotics</em>, 2016
+<br>
+<a href="downloads/bibtex/Eckenhoff2016WAFR.bib">bibtex</a> / 
+<a href="downloads/papers/Eckenhoff2016WAFR.pdf">pdf</a> / 
+<a href="downloads/reports/tr_hapi.pdf">tech report</a> / 
+<a href="https://www.youtube.com/watch?v=Ae-ILDBzlK4">video</a> / 
+<a href="downloads/slides/Eckenhoff2016WAFR.pdf">slides</a>
+<p></p>
+</td>
+</tr>
+
+</tbody></table>
+</td></tr></tbody></table>
+
+
+
+<!-- ====================================== -->
+<!-- ====================================== -->
+<!-- ====================================== -->
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<tbody>
+<tr>
+<td style="padding:0px">
+<br>
+<p style="text-align:center;font-size:small;">
+   Special thanks to <a href="https://jonbarron.info/">Jon Barron</a> for the website's <a href="https://github.com/goldbattle/website">source code</a>.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+
+
+<table style="width:10%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<tbody>
+<td style="padding:25px;width:100%;vertical-align:middle;">
+<p style="text-align:center;font-size:small;display:flex;justify-content:center;">
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=R-vc7xFXzYuVuZSBAgQSrW9tBPvGvHca7SXrQ1uuLRY"></script>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+
+
+</body>
+</html>

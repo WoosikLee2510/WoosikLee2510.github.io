@@ -1,0 +1,135 @@
+@font-face {
+  font-style: normal;
+  font-family: "JetBrains Mono";
+  src: local("Monospace"), local("JetBrains Mono"), url("fonts/ttf/JetBrainsMono-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: "JetBrains Mono", monospace;
+  /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
+  font-size: 1.0em /*14px*/
+}
+
+strong {
+  /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
+  font-size: 1.0em /*14px*/
+}
+
+heading {
+  /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
+  font-size: 2.0em /*22px*/
+}
+
+papertitle {
+  /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
+  font-size: 1.0em /*14px*/
+  font-weight: 700
+}
+
+name {
+  /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
+  font-size: 3.5em /*32px*/
+}
+
+.one {
+  width: 200px;
+  min-height: 200px;
+  position: relative;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+  /*z-index: 0;*/
+}
+
+.one img {
+  width: 200px;
+  max-height: 200px;
+  /*top: 50%;*/
+  /*transform: translateY(50%);*/
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.two {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+  /*z-index: 1;*/
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffff8385;
+}
+
+tr.highlight {
+  background-color: #ffff8354;
+}
+
+/* for small screens, stack our pubs */
+@media only screen and (max-width: 560px) {
+  td {
+    display: block;
+    width: 100% !important;
+    /*text-align: center;*/
+    padding: 1.0em 0.5em !important;
+    box-sizing: border-box;
+  }
+  .one {
+    margin: auto;
+  }
+  .two {
+    margin: auto;
+  }
+  #profile {
+    margin: auto;
+    max-width: 80% !important;
+  }
+}
+
+/* dark theme option for our custom css */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #191919 !important;
+        color: white;
+    }
+    span.highlight {
+      background-color: #ffff8354;
+    }
+    tr.highlight {
+      background-color: #ffff8312;
+    }
+    
+}
