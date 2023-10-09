@@ -1,9 +1,6 @@
-Patrick Geneva is a PhD candidate at the University of Delaware pursuing degree in Computer Science 
-in the College of Engineering. He is interested in the areas of robotics and state estimation and 
-is under the direction of Guoquan Huang in Robot Perception and Navigation Group (RPNG). His 
-primary focus is in the areas of simultaneous localization and mapping (SLAM) and visual-inertial 
-navigation systems (VINS). He received a Bachelor in Mechanical Engineering with minors in Computer 
-Science & Mathematics from the University of Delaware in 2017. He is the recipient of the 
-University Doctoral Fellowship Award (2021), NASA Delaware Space Grant (DESG) Graduate Fellowship
-(2019 and 2022), and Mary and George Nowinski Award for Excellence in Undergraduate Research Award
-(2017).
+My name is Woosik Lee, and I am a Ph.D. candidate at the Department of Mechanical Engineering at
+University of Delaware. I am interested in the areas of localization, robotics, and computer
+applications. Under the direction of Guoquan Huang, I am exploring the area of simultaneous
+localization and mapping (SLAM), visual-inertial navigation systems (VINS), multisensor-aided
+inertial navigation systems (MINS), online calibration, and consistent & efficient estimation.
+I received Bachelor and Master in Mechanical Engineering from the Korea University (2015 / 2017).
