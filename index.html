@@ -114,15 +114,6 @@
     </td>
     <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://arxiv.org/abs/2309.09295"><papertitle>NeRF-VINS: A Real-time Neural Radiance Field Map-based Visual-Inertial Navigation System</papertitle></a><br>
-        Saimouli Katragadda,
-        <strong>Woosik Lee</strong>,
-        Yuxiang Peng,
-        Patrick Geneva,
-        Chuchu Chen,
-        Chao Guo,
-        Mingyang Li,
-        Guoquan Huang
-        <br>
         <em>Effectively leveraging NeRF’s potential to synthesize
             novel views, essential for addressing limited viewpoints, the
             proposed NeRF-VINS optimally fuses IMU and monocular
@@ -145,15 +136,19 @@
 </td>
 <td style="padding:20px;width:75%;vertical-align:middle">
 <a href="https://arxiv.org/abs/2309.15390"><papertitle>MINS: Efficient and Robust Multisensor-aided Inertial Navigation System</papertitle></a><br>
-<strong>Woosik Lee</strong>,
-Patrick Geneva,
-Chuchu Chen,
-Guoquan Huang
-<br>
+
 <em>A consistent tightly coupled Multisensor-aided Inertial Navigation System (MINS) that is capable of fusing the most common navigation
-    sensors in an efficient filtering framework, by addressing the particular challenges of computational complexity, sensor
-    asynchronicity, and intra-sensor calibration. In particular, we propose a consistent high-order on-manifold interpolation
-    scheme to enable efficient asynchronous sensor fusion and state management strategy (i.e. dynamic cloning)</em>, 2023
+    sensors. Support:<br>
+    - An efficient and robust filtering-based multi-sensor estimator <br>
+    - Fuse IMU, wheel encoders, cameras, LiDARs, and GPS <br>
+    - Flexible in adding homogenous and heterogeneous sensors <br>
+    - Online calibration of all onboard sensors extrinsic and intrinsic <br>
+    - Handle asynchronous and delayed measurements <br>
+    - Lightweight with on-manifold state interpolation and dynamic cloning <br>
+    - Resilient to sensor failures, measurement depletion, and outliers <br>
+    - Robust proprioceptive sensor-based initialization <br>
+    - Sensor simulation toolbox for algorithm evaluation <br></em>
+    2023
 <br>
 <a href="downloads/bibtex/Lee2024IJRR.bib">bibtex</a> /
 <a href="downloads/papers/Lee2024IJRR.pdf">pdf</a> /
@@ -173,13 +168,10 @@ Guoquan Huang
     </td>
     <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://chuchuchen.net/downloads/papers/Chen2023IROS.pdf"><papertitle>Optimization-based VINS: Consistency, Marginalization, and FEJ</papertitle></a><br>
-        Chuchu Chen,
-        Patrick Geneva,
-        Yuxiang Peng,
-        <strong>Woosik Lee</strong>,
-        Guoquan Huang
-        <br>
-        <em>2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2023
+        <em>A comprehensive analysis
+            of the application of the First-estimates Jacobian (FEJ) design
+            methodology in nonlinear optimization-based Visual-Inertial
+            Navigation Systems (VINS)</em>, 2023
         <br>
         <a href="downloads/bibtex/Chen2023IROS.bib">bibtex</a> /
         <a href="downloads/papers/Chen2023IROS.pdf">pdf</a> /
@@ -201,12 +193,6 @@ Guoquan Huang
 </td>
 <td style="padding:20px;width:75%;vertical-align:middle">
 <a href="https://ieeexplore.ieee.org/abstract/document/10160620"><papertitle>Monocular Visual-Inertial Odometry with Planar Regularities</papertitle></a><br>
-Chuchu Chen<sup>*</sup>,
-Patrick Geneva<sup>*</sup>,
-Yuxiang Peng,
-<strong>Woosik Lee</strong>,
-Guoquan Huang
-<br>
 <em>A novel real-time monocular VIO system that is fully regularized by planar features within a lightweight multi-state constraint Kalman filter (MSCKF)</em>, 2023
 <br>
 <a href="downloads/bibtex/Chen2023ICRA.bib">bibtex</a> /
@@ -232,12 +218,6 @@ Guoquan Huang
 </td>
 <td style="padding:20px;width:75%;vertical-align:middle">
 <a href="https://ieeexplore.ieee.org/abstract/document/9982263"><papertitle>Visual-Inertial-Aided Online MAV System Identification</papertitle></a>
-<br>
-Chuchu Chen<sup>*</sup>,
-Yulin Yang<sup>*</sup>,
-Patrick Geneva,
-<strong>Woosik Lee</strong>,
-Guoquan Huang
 <br>
 <em>An online MAV system identification algorithm
     to tightly fuse visual, inertial and MAV aerodynamic information within a lightweight multi-state constraint Kalman filter
@@ -265,11 +245,6 @@ Guoquan Huang
 <td style="padding:20px;width:75%;vertical-align:middle">
 <a href="https://ieeexplore.ieee.org/abstract/document/9811362"><papertitle>Tightly-coupled GNSS-aided Visual-Inertial Localization</papertitle></a>
 <br>
-<strong>Woosik Lee</strong>,
-Patrick Geneva,
-Yulin Yang,
-Guoquan Huang
-<br>
 <em>A tightly-coupled GNSS-aided visual-inertial navigation system which is able to leverage the complementary sensing modality from a visual-inertial sensing pair,
     which provides high-frequency local information, and a GNSS receiver with low-frequency global observations</em>, 2022
 <br>
@@ -295,12 +270,6 @@ Guoquan Huang
                 Visual-Inertial Navigation
             </papertitle>
         </a><br>
-        <br>
-        Yulin Yang,
-        Chuchu Chen,
-        <strong>Woosik Lee</strong>,
-        Guoquan Huang
-        <br>
         <em>Two novel algorithms which
             preserve the system consistency by leveraging the invariant state
             representation and ensure efficiency by decoupling features from
@@ -325,14 +294,9 @@ Guoquan Huang
     <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://ieeexplore.ieee.org/abstract/document/9561254/"><papertitle>Efficient multi-sensor aided inertial navigation with online calibration</papertitle></a>
         <br>
-        <strong>Woosik Lee</strong>,
-        Yulin Yang,
-        Guoquan Huang
-        <br>
-        <em>A versatile multi-sensor aided inertial navigation system (MINS) that can efficiently
-            fuse multi-modal measurements of IMU, camera, wheel encoder, GPS, and 3D LiDAR along
-            with online spatiotemporal sensor calibration</em>, 2022
-        <br>
+        <em>
+            A versatile multi-sensor aided inertial navigation system that can efficiently fuse multi-modal measurements of IMU, camera, wheel encoder, GPS, and 3D LiDAR along with online spatiotemporal sensor calibration.
+            </em> <br>
         <a href="downloads/bibtex/Lee2021ICRA.bib">bibtex</a> /
         <a href="downloads/papers/Lee2021ICRA.pdf">pdf</a> /
         <a href="https://www.youtube.com/watch?v=rV50nLJ6Mt0">video</a> /
@@ -352,14 +316,12 @@ Guoquan Huang
 <td style="padding:20px;width:75%;vertical-align:middle">
 <a href="https://udel.edu/~ghuang/icra21-vins-workshop/"><papertitle>iCalib: Inertial Aided Multi-Sensor Calibration</papertitle></a>
 <br>
-Yulin Yang,
-<strong>Woosik Lee</strong>,
-Philip Osteen,
-Patrick Geneva,
-Xingxing Zuo,
-Guoquan Huang
-<br>
-<em>Workshop on Visual-Inertial Navigation Systems</em>, 2021
+<em>A holistic non-linear least squares
+    (NLS) based multi-sensor calibration system, which exploits
+    high-rate inertial navigation and can handle a multitude of
+    asynchronous sensors commonly found on robots (e.g., IMU,
+    cameras, LiDARs, and wheel odometry) while requiring only
+    initial calibration guesses</em>, 2021
 <br>
 <a href="downloads/bibtex/Yang2021ICRAws.bib">bibtex</a> /
 <a href="downloads/papers/Yang2021ICRAws.pdf">pdf</a> /
@@ -381,13 +343,14 @@ Guoquan Huang
 <td style="padding:20px;width:75%;vertical-align:middle">
 <a href="https://ieeexplore.ieee.org/abstract/document/9196524"><papertitle>OpenVINS: A Research Platform for Visual-Inertial Estimation</papertitle></a>
 <br>
-Patrick Geneva,
-Kevin Eckenhoff,
-<strong>Woosik Lee</strong>,
-Yulin Yang,
-Guoquan Huang
-<br>
-<em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2020
+<em>An open platform, termed OpenVINS, for visual-inertial estimation research. Supports: <br>
+    - On-manifold sliding window Kalman filter <br>
+    - Online IMU/camera intrinsic and extrinsic calibration <br>
+    - Camera to inertial sensor time offset calibration <br>
+    - SLAM landmarks with different representations and consistent FEJ <br>
+    - Modular type system for state management <br>
+    - Extendable visual-inertial system simulator <br>
+    - Extensive toolbox for algorithm evaluation <br></em> 2020
 <br>
 <a href="downloads/bibtex/Geneva2020ICRA.bib">bibtex</a> /
 <a href="downloads/papers/Geneva2020ICRA.pdf">pdf</a> /
@@ -411,14 +374,13 @@ Guoquan Huang
     <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://ieeexplore.ieee.org/abstract/document/9341264"><papertitle>Versatile 3D Multi-Sensor Fusion for Lightweight 2D Localization</papertitle></a>
         <br>
-        Patrick Geneva<sup>*</sup>,
-        Nathaniel Merrill<sup>*</sup>,
-        Yulin Yang,
-        Chuchu Chen,
-        <strong>Woosik Lee</strong>,
-        Guoquan Huang
-        <br>
-        <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2020
+        <em>A 2-stage localization system which incorporates both offline prior map building and
+            online multi-modal localization. In particular, we develop an
+            occupancy grid mapping system with probabilistic odometry
+            fusion, accurate scan-to-submap covariance modeling, and
+            accelerated loop-closure detection, which is further aided by
+            2D line features that exploit the environmental structural
+            constraints</em>, 2020
         <br>
         <a href="downloads/bibtex/Geneva2020IROS.bib">bibtex</a> /
         <a href="downloads/papers/Geneva2020IROS.pdf">pdf</a> /
@@ -440,13 +402,10 @@ Guoquan Huang
     <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://ieeexplore.ieee.org/abstract/document/9341161"><papertitle>Visual-Inertial-Wheel Odometry with Online Calibration</papertitle></a>
         <br>
-        <strong>Woosik Lee</strong>,
-        Kevin Eckenhoff,
-        Yulin Yang,
-        Patrick Geneva,
-        Guoquan Huang
-        <br>
-        <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2020
+        <em>A novel visual-inertialwheel odometry (VIWO) system for ground vehicles, which
+            efficiently fuses multi-modal visual, inertial and 2D wheel
+            odometry measurements in a sliding-window filtering fashion.
+            Wheel encoders’ both intrinsic and extrinsic (spatiotemproal) parameters are calibrated online</em>, 2020
         <br>
         <a href="downloads/bibtex/Lee2020IROS.bib">bibtex</a> /
         <a href="downloads/papers/Lee2020IROS.pdf">pdf</a> /
@@ -469,12 +428,8 @@ Guoquan Huang
 <td style="padding:20px;width:75%;vertical-align:middle">
 <a href="https://ieeexplore.ieee.org/document/9197029"><papertitle>Intermittent GPS-aided VIO: Online Initialization and Calibration</papertitle></a>
 <br>
-<strong>Woosik Lee</strong>,
-Kevin Eckenhoff,
-Patrick Geneva,
-Guoquan Huang
-<br>
-<em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2020
+<em>An efficient and robust GPS-aided visual inertial odometry (GPS-VIO) system that fuses IMU-camera data with intermittent GPS measurements.
+    To perform sensor fusion, spatiotemporal sensor calibration and initialization of the transform between the sensor reference frames are addressed</em>, 2020
 <br>
 <a href="downloads/bibtex/Lee2020ICRA.bib">bibtex</a> /
 <a href="downloads/papers/Lee2020ICRA.pdf">pdf</a> /
@@ -495,13 +450,10 @@ Guoquan Huang
 <td style="padding:20px;width:75%;vertical-align:middle">
 <a href="https://udel.edu/~ghuang/iros19-vins-workshop/"><papertitle>OpenVINS: A Research Platform for Visual-Inertial Estimation</papertitle></a>
 <br>
-Patrick Geneva,
-Kevin Eckenhoff,
-<strong>Woosik Lee</strong>,
-Yulin Yang, 
-Guoquan Huang
-<br>
-<em>Workshop on Visual-Inertial Navigation: Challenges and Applications</em>, 2019
+<em>The open
+    sourced codebase provides a foundation for researchers and
+    engineers to quickly start developing new capabilities for their
+    visual-inertial systems</em>, 2019
 <br>
 <a href="downloads/bibtex/Geneva2019IROSws.bib">bibtex</a> / 
 <a href="downloads/papers/Geneva2019IROSws.pdf">pdf</a> / 
@@ -523,13 +475,7 @@ Guoquan Huang
     <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://ieeexplore.ieee.org/abstract/document/8967746"><papertitle>LIC-Fusion: LiDAR-Inertial-Camera Odometry</papertitle></a>
         <br>
-        Xingxing Zuo,
-        Patrick Geneva,
-        <strong>Woosik Lee</strong>,
-        Yong Liu,
-        Guoquan Huang
-        <br>
-        <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2019
+        <em>A tightly-coupled multi-sensor fusion algorithm termed LiDAR-inertial-camera fusion (LIC-Fusion), which efficiently fuses IMU measurements, sparse visual features, and extracted LiDAR points</em>, 2019
         <br>
         <a href="downloads/bibtex/Zuo2019IROS.bib">bibtex</a> /
         <a href="downloads/papers/Zuo2019IROS.pdf">pdf</a> /
@@ -549,9 +495,6 @@ Guoquan Huang
     <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://www.mdpi.com/1424-8220/19/19/4236"><papertitle>Practical Modeling of GNSS for Autonomous Vehicles in Urban Environments</papertitle></a>
         <br>
-        <strong>Woosik Lee</strong>,
-        Woojin Chung
-        <br>
         <em>A method of quantitatively modeling uncertainty in the accumulated GNSS and in wheel encoder data accumulated in anonymous urban environments, collected using vehicles</em>, 2019
         <br>
         <a href="downloads/bibtex/Lee2019Sensors.bib">bibtex</a> /
@@ -569,9 +512,6 @@ Guoquan Huang
     </td>
     <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://ieeexplore.ieee.org/abstract/document/7358906"><papertitle>Position estimation using multiple low-cost GPS receivers for outdoor mobile robots</papertitle></a>
-        <br>
-        <strong>Woosik Lee</strong>,
-        Woojin Chung
         <br>
         <em>A method of using multiple low-cost GPS
             receivers in position estimation to enhance accuracy and
@@ -591,11 +531,6 @@ Guoquan Huang
     </td>
     <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://ieeexplore.ieee.org/abstract/document/7364987"><papertitle>A Big Data System Design to Predict the Vehicle Slip</papertitle></a>
-        <br>
-        Joohyoung Jeon,
-        <strong>Woosik Lee</strong>,
-        Hyo Joo Cho,
-        Hongchul Lee
         <br>
         <em>A system storing sensor data generated from the vehicle using Big data system and
             analyzing real-time sensor output to predict the car slip</em>, 2015
